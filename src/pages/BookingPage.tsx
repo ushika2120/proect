@@ -13,6 +13,7 @@ import {
 } from 'lucide-react'
 import BookingForm from '../components/BookingForm'
 import BookingModal from '../components/BookingModal'
+import { DoctorDirectory } from '../components/DoctorDirectory'
 import { useBookingForm } from '../hooks/useBookingForm'
 import '../styles/booking.scss'
 import { formatBookingDate } from '../utils/bookingDate'
@@ -48,6 +49,7 @@ function BookingPage() {
         <nav aria-label="მთავარი ნავიგაცია" className="site-nav">
           <a href="#about">ჩვენ შესახებ</a>
           <a href="#details">სერვისები</a>
+          <a href="#doctors">ექიმები</a>
           <a href="#contact">კონტაქტი</a>
         </nav>
         <a className="header-booking" href="#booking">
@@ -173,6 +175,8 @@ function BookingPage() {
             </div>
           </aside>
         </section>
+
+        <DoctorDirectory />
       </main>
 
       <footer className="site-footer" id="contact">
