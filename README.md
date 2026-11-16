@@ -11,6 +11,12 @@ npm install
 npm run dev
 ```
 
+## GitHub Pages-ზე გამოქვეყნება
+
+ცვლილებების `main` ბრენჩზე ატვირთვის შემდეგ GitHub Actions ავტომატურად ააწყობს და გამოაქვეყნებს საიტს. რეპოზიტორიის `Settings > Pages` განყოფილებაში `Build and deployment > Source` უნდა იყოს არჩეული `GitHub Actions`.
+
+გამოქვეყნების შემდეგ საიტის მისამართია `https://ushika2120.github.io/proect/`.
+
 პროდუქციული build-ის შესაქმნელად და ლინტერის გასაშვებად:
 
 ```bash

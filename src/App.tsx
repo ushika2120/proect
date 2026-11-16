@@ -3,7 +3,7 @@ import BookingPage from './pages/BookingPage'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<BookingPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
